@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                fontSize: {
+                    s: ['10px', '16px'],
+                    sm: ['14px', '20px'],
+                    base: ['16px', '24px'],
+                    lg: ['20px', '28px'],
+                    xl: ['24px', '32px'],
+                    xxl: ['44px', '36px'],
+                },
+                extend: {
+                    fontFamily: {
+                        'inconsolata': ['"Inconsolata"'],
+                        'space-mono': ['"Space Mono"'],
+                        'montserrat': ['"Montserrat"']
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+    <title>404 not found</title>
+</head>
+
+<body class="bg-black text-white">
+    <h1 class="font-bold tracking-tighter font-inconsolata text-transform: uppercase px-12 py-6">404 not found</h1>
+    <div class="grid grid-cols-2 gap-20 w-full place-items-center px-12 py-10">
+        <img class="pr-12 pl-12 pb-12 pt-4 px-12" src="Scarecrow.png" alt="">
+        <div class="place-self-center grid grid-rows-2">
+            <p class="text-xxl bg-black font-bold font-space-mono w-3/4 py-8 leading-loose">I have bad news for you</p>
+
+            <div class="font-space-mono bg-black w-2/5">
+                <p class="pb-12">The page you are looking for might be removed or is
+                    temporarily unavailable</p>
+                <button class="font-space-mono text-s font-bold bg-white w-3/4 uppercase text-black py-5">Back to homepage</button>
+            </div>
+        </div>
+        <!--  -->
+        <!-- <div>blablabla</div> -->
+    </div>
+    <footer class="font-montserrat place-items-center grid sticky top-[100vh]">created by Chrisline LIN -
+        devChallenges.io</footer>
+</body>
+
+</html>
