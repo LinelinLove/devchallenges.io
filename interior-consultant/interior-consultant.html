@@ -14,6 +14,18 @@
 
     <script src="tailwind.config.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <style>
+        .currentpage {
+            font-weight: 700;
+            padding-bottom: 10px;
+            border-bottom-width: 2px;
+            /* transition: .2s; */
+        }
+    </style>
 
 
     <title>Interior consultant</title>
@@ -30,13 +42,22 @@
                 </p>
             </div>
             <div class="place-self-end">
-                <p class="">
-                    <i class="material-icons">menu</i>
+                <p class="material-icons">
+                    menu
                 </p>
+                <ul class="text-h2 font-montserrat font-medium">
+                    <li class="pb-12"><a href="#home">Home</a></li>
+                    <!-- class="font-bold border-b-2 pb-2.5" -->
+                    <li class="pb-12"><a href="#collection">Collection</a></li>
+                    <li class="pb-12"><a href="#about">About</a></li>
+                    <li class="pb-12"><a href="#contact">Contact</a></li>
+                </ul>
+
+
             </div>
         </nav>
     </header>
-
+    <div id="demo" class="bg-white w-full h-full z-10"></div>
     <div class="grid auto-rows-min gap-y-9 mt-10 mb-36">
         <!-- croix pour close -->
         <!-- <p class="material-icons border border-white w-min">close</p> -->
@@ -52,15 +73,14 @@
                     organizing & eco-services.</p>
             </div>
             <!-- flex flex-nowrap -->
-            <div class="flex flex-nowrap relative">
-                <div class="mr-2.5">
-                    <p class="text-p font-montserrat font-bold leading-4 w-max">Read more</p>
-                </div>
-                <div>
-                    <p class="absolute -top-1 material-icons w-min">arrow_right_alt</p>
-                </div>
 
+            <div>
+                <p class="text-p font-montserrat font-bold leading-4 w-max relative"><a href="#">Read more
+                    <span class="mr-2.5"></span>
+                    <span class="absolute -top-1 material-icons w-min">arrow_right_alt</span></a>
+                </p>
             </div>
+
         </div>
 
         <!-- image -->
@@ -69,7 +89,8 @@
                 <img src="photo1.png" alt="Interior Design">
             </div>
 
-            <div class="absolute bg-light-black top-56 ml-12 mr-6 pl-5 pb-6 pt-4 pr-24 drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            <div
+                class="absolute bg-light-black top-56 ml-12 mr-6 pl-5 pb-6 pt-4 pr-24 drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
                 <div class="flex flex-nowrap">
                     <div>
                         <div class="w-9 mr-3.5"><img src="photo2.png" alt="Aliza Webber" class="rounded-full"></div>
@@ -96,6 +117,7 @@
             </span> - devChallenges.io
         </p>
     </footer>
+
 </body>
 
 </html>
