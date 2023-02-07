@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
 
-
     <script src="tailwind.config.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.6.3.js"
@@ -25,19 +24,19 @@
         }
     </style>
 
-
     <title>Interior consultant</title>
 </head>
 
 
-<body id="overflow" class="bg-light-black text-white relative z-0">
+<body id="overflow" class="bg-light-black text-white relative z-0
+lg:mr-20 lg:ml-20 lg:mt-10">
 
     <header>
         <div id="show_menu" class="bg-light-black absolute w-full h-full z-10 -top-4" style="visibility: hidden;">
             <div class="w-full flex justify-end pt-4 pr-4">
                 <p class="material-icons" id="closemenu">close</p>
             </div>
-            <div class="flex flex-col h-full pt-40 items-center">
+            <div class="flex flex-col h-full pt-64 items-center">
                 <ul class="text-h2 font-montserrat font-medium text-center">
                     <li class="pb-12"><a href="#home">Home</a></li>
                     <li class="pb-12"><a href="#collection">Collection</a></li>
@@ -54,30 +53,43 @@
                 </p>
             </div>
             <div class="place-self-end">
-                <p id="openmenu" class="material-icons">
-                    menu
-                </p>
-            </div>
-        </nav>
+            <p id="openmenu" class="material-icons lg:hidden">
+                menu
+            </p>
+            <ul class="text-h2 font-montserrat font-medium text-center hidden
+            lg:visible lg:flex lg:gap-x-20">
+                <li class="pb-12"><a href="#home">Home</a></li>
+                <li class="pb-12"><a href="#collection">Collection</a></li>
+                <li class="pb-12"><a href="#about">About</a></li>
+                <li class="pb-12"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     </header>
 
-    <div class="grid auto-rows-min gap-y-9 mt-10 mb-36 ml-3 mr-3">
+    <div class="grid auto-rows-min gap-y-9 mt-10 mb-36 ml-3 mr-3
+    lg:grid-cols-2 lg:gap-x-32">
 
-        <div class="grid gap-y-6">
+        <div class="grid gap-y-6
+        lg:gap-x-0 lg:auto-rows-min lg:content-center">
             <div>
-                <h1 class="text-h1 font-lora leading-10 font-medium">Modern interior</h1>
+                <h1 class="text-h1 font-lora leading-10 font-medium
+                lg:text-h0">Modern interior</h1>
             </div>
             <div>
-                <p class="text-p font-montserrat font-normal leading-4 mr-32">
+                <p class="text-p font-montserrat font-normal leading-4 mr-32
+                lg:text-p2">
                     A full-Service residential & commercial
                     interior design and staging company offering professional
                     organizing & eco-services.</p>
             </div>
 
             <div>
-                <p class="text-p font-montserrat font-bold leading-4 w-max relative z-0"><a href="#">Read more
+                <p class="text-p font-montserrat font-bold leading-4 w-max relative
+                lg:text-h2"><a href="#">Read more
                         <span class="mr-2.5"></span>
-                        <span class="absolute z-0 -top-1 material-icons w-min">arrow_right_alt</span></a>
+                        <span class="absolute -top-1 material-icons w-min
+                        lg:-top-0.5">arrow_right_alt</span></a>
                 </p>
             </div>
 
@@ -87,15 +99,16 @@
             <div>
                 <img src="photo1.png" alt="Interior Design">
             </div>
-
-            <div
-                class="absolute bg-light-black top-56 ml-12 mr-6 pl-5 pb-6 pt-4 pr-24 drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            <div class=
+            "absolute bg-light-black drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] ml-12 mr-6 pl-5 pb-6 pt-4 pr-24 -bottom-20 top-auto right-8">
                 <div class="flex flex-nowrap">
                     <div>
-                        <div class="w-9 mr-3.5"><img src="photo2.png" alt="Aliza Webber" class="rounded-full"></div>
+                        <div class="w-9 mr-3.5
+                        lg:w-12"><img src="photo2.png" alt="Aliza Webber" class="rounded-full"></div>
                     </div>
                     <div class="text-montserrat font-medium">
-                        <p class="text-montserrat leading-4">Aliza Webber</p>
+                        <p class="text-montserrat leading-4 mb-1.5
+                        lg:mb-2">Aliza Webber</p>
                         <p class="text-light-grey2 leading-3">Interior designer</p>
                     </div>
                 </div>
