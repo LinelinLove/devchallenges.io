@@ -31,8 +31,6 @@
 
 ![screenshot](preview.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
 - You can see the [live demo here](https://linelinlove.github.io/devchallenges.io/responsive-web-developer/1-404-not-found/404-not-found.html).
 
 ### Built With

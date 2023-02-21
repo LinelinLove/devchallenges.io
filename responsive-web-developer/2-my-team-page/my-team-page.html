@@ -16,19 +16,17 @@
     <title>My team page</title>
 </head>
 
-<!-- sm:ml-60 sm:mr-64 -->
-
-<body class="ml-0 mr-0 mt-20
-sm:ml-28 sm:mr-32 sm:mt-28">
+<body class="flex flex-col ml-0 mr-0 mt-20 gap-y-16
+lg:ml-28 lg:mr-32 lg:mt-28">
 
     <div class="grid auto-rows-min gap-y-11 gap-x-0 
-    sm:grid-cols-2 sm:gap-y-0 sm:gap-x-52">
+    lg:grid-cols-2 lg:gap-y-0 lg:gap-x-52">
         <div>
             <h1 class="text-h1 font-pt-serif font-bold tracking-tighter leading-10 ml-3">
                 The creative crew
             </h1>
         </div>
-        <div class="mb-16">
+        <div>
             <h2 class="text-h2 font-poppins font-semibold uppercase leading-7 ml-3 mb-2.5">
                 Who we are
             </h2>
@@ -41,91 +39,83 @@ sm:ml-28 sm:mr-32 sm:mt-28">
     </div>
     <!-- parent -->
     <div class="grid grid-cols-2 gap-x-11 ml-5 mr-9 mb-32
-    sm:grid-cols-3 sm:gap-x-24">
+    lg:grid-cols-3 lg:gap-x-24">
 
-        <div class="even:mt-12 relative
-        sm:even:mt-0
+        <div class="even:mt-12 relative pr-3
+        lg:even:mt-0
         ">
-            <figure class="">
-                <img src="photo1.png" alt="Bill Mahoney">
-                <figcaption class="w-full  absolute -right-2/3 whitespace-nowrap top-16 font-pt-serif text-caption leading-4 font-normal rotate-90 uppercase
-                    sm:top-40 sm:left-48">
-                    Product owner
-                </figcaption>
-            </figure>
+            <img src="photo1.png" alt="Bill Mahoney" class="w-full">
+            <span style="transform-origin: 100% 0; transform: rotate(90deg) translate(100%, -100%);"
+                class="absolute top-0 right-0 whitespace-nowrap font-pt-serif text-caption leading-4 font-normal uppercase">
+                Product owner
+            </span>
             <p class="text-p font-poppins leading-5 font-semibold mt-2.5">
                 Bill Mahoney
             </p>
         </div>
 
-        <div class="even:mt-12 relative
-        sm:even:mt-24">
-            <figure class="">
-                <img src="photo2.png" alt="Saba Cabrera">
-                <figcaption class="w-full  absolute -right-2/3 whitespace-nowrap top-16 font-pt-serif text-caption leading-4 font-normal rotate-90 uppercase
-                    sm:top-40 sm:left-48">
-                    Art director
-                </figcaption>
-            </figure>
+        <div class="even:mt-12 relative pr-3
+        lg:even:mt-24">
+
+            <img src="photo2.png" alt="Saba Cabrera" class="w-full">
+            <span style="transform-origin: 100% 0; transform: rotate(90deg) translate(100%, -100%);"
+                class="absolute top-0 right-0 whitespace-nowrap font-pt-serif text-caption leading-4 font-normal uppercase">
+                Art director
+            </span>
             <p class="text-p font-poppins leading-5 font-semibold mt-2.5">
                 Saba Cabrera
             </p>
         </div>
 
 
-        <div class="even:mt-12 relative
+        <div class="even:mt-12 relative pr-3
         ">
-            <!-- sm:even:mt-24 -->
-            <figure class="">
-                <img src="photo3.png" alt="Shae Le">
-                <figcaption class="w-full  absolute -right-2/3 whitespace-nowrap top-16 font-pt-serif text-caption leading-4 font-normal rotate-90 uppercase
-                    sm:top-40 sm:left-48">
-                    Tech Lead
-                </figcaption>
-            </figure>
+            <img src="photo3.png" alt="Shae Le" class="w-full">
+            <span style="transform-origin: 100% 0; transform: rotate(90deg) translate(100%, -100%);"
+                class="absolute top-0 right-0 whitespace-nowrap font-pt-serif text-caption leading-4 font-normal uppercase">
+                Tech Lead
+            </span>
             <p class="text-p font-poppins leading-5 font-semibold mt-2.5">
                 Shae Le
             </p>
         </div>
 
-        <div class="even:mt-12 relative
-        sm:even:mt-0
+        <div class="even:mt-12 relative pr-3
+        lg:even:mt-0
         ">
-            <figure class="">
-                <img src="photo4.png" alt="Skylah Lu">
-                <figcaption class="w-full  absolute -right-2/3 whitespace-nowrap top-16 font-pt-serif text-caption leading-4 font-normal rotate-90 uppercase
-                    sm:top-40 sm:left-48">
-                    UX Designer
-                </figcaption>
-            </figure>
+
+            <img src="photo4.png" alt="Skylah Lu" class="w-full">
+            <span style="transform-origin: 100% 0; transform: rotate(90deg) translate(100%, -100%);"
+                class="absolute top-0 right-0 whitespace-nowrap font-pt-serif text-caption leading-4 font-normal uppercase">
+                UX Designer
+            </span>
+
             <p class="text-p font-poppins leading-5 font-semibold mt-2.5">
                 Skylah Lu
             </p>
         </div>
 
-        <div class="even:mt-12 relative
-        sm:odd:mt-24">
-            <figure class="">
-                <img src="photo5.png" alt="Griff Richards">
-                <figcaption class="w-full  absolute -right-2/3 whitespace-nowrap top-16 font-pt-serif text-caption leading-4 font-normal rotate-90 uppercase
-                    sm:top-40 sm:left-48">
-                    Developer
-                </figcaption>
-            </figure>
+        <div class="even:mt-12 relative pr-3
+        lg:odd:mt-24">
+
+            <img src="photo5.png" alt="Griff Richards" class="w-full">
+            <span style="transform-origin: 100% 0; transform: rotate(90deg) translate(100%, -100%);"
+                class="absolute top-0 right-0 whitespace-nowrap font-pt-serif text-caption leading-4 font-normal uppercase">
+                Developer
+            </span>
+
             <p class="text-p font-poppins leading-5 font-semibold mt-2.5">
                 Griff Richards
             </p>
         </div>
 
-        <div class="even:mt-12 relative
-        sm:even:mt-0">
-            <figure class="">
-                <img src="photo6.png" alt="Stan John">
-                <figcaption class="w-full  absolute -right-2/3 whitespace-nowrap top-16 font-pt-serif text-caption leading-4 font-normal rotate-90 uppercase
-                    sm:top-40 sm:left-48">
-                    Deverloper
-                </figcaption>
-            </figure>
+        <div class="even:mt-12 relative pr-3
+        lg:even:mt-0">
+            <img src="photo6.png" alt="Stan John" class="w-full">
+            <span style="transform-origin: 100% 0; transform: rotate(90deg) translate(100%, -100%);"
+                class="absolute top-0 right-0 whitespace-nowrap font-pt-serif text-caption leading-4 font-normal uppercase">
+                Deverloper
+            </span>
             <p class="text-p font-poppins leading-5 font-semibold mt-2.5">
                 Stan John
             </p>
@@ -136,7 +126,9 @@ sm:ml-28 sm:mr-32 sm:mt-28">
         <p class="text-p font-montserrat pb-6 leading-4 text-light-grey">
             created by
             <span class="underline underline-offset-2 font-bold">
-                Chrisline LIN
+                <a href="https://github.com/LinelinLove">
+                    Chrisline LIN
+                </a>
             </span> - devChallenges.io
         </p>
     </footer>
