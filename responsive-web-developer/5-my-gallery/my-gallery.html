@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <title>My gallery</title>
+</head>
+
+<body class="mt-8 font-montserrat font-semibold mr-3 ml-3
+lg:mr-60 lg:ml-60">
+
+    <div class="flex flex-col items-center gap-y-4 mb-10
+    lg:mb-16">
+        <div class="flex flex-col gap-y-3.5 items-center
+        lg:gap-y-4">
+            <figure class="w-28
+            lg:w-40">
+                <img src="profilePhoto.png" alt="Rodney Cotton" class="rounded-2xl">
+            </figure>
+            <div class="flex flex-col gap-y-1 items-center
+            lg:gap-y-2">
+                <div>
+                    <p class="text-p leading-4
+                    lg:text-h1 lg:leading-7">Rodney Cotton</p>
+                </div>
+                <div>
+                    <p class="text-m leading-3 text-light-grey
+                    lg:text-p lg:leading-4 ">Helsinki, Finland</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row gap-x-3.5 items-center leading-4 text-caption">
+            <div class="w-20 rounded-xl flex flex-col gap-y-0.5 items-center bg-bg pt-2.5 pb-2.5
+            lg:w-24 lg:gap-y-1">
+                <p class="text-caption
+                lg:text-p2">100</p>
+                <p class="text-caption text-light-grey2
+                lg:text-p">Posts</p>
+            </div>
+
+            <div class="w-20 rounded-xl flex flex-col gap-y-0.5 items-center bg-bg pt-2.5 pb-2.5
+            lg:w-24 lg:gap-y-1">
+                <p class="text-caption
+                lg:text-p2">2,242</p>
+                <p class="text-caption text-light-grey2
+                lg:text-p">Followers</p>
+            </div>
+
+            <div class="w-20 rounded-xl flex flex-col gap-y-0.5 items-center bg-bg pt-2.5 pb-2.5
+            lg:w-24 lg:gap-y-1">
+                <p class="text-caption
+                lg:text-p2">1,432</p>
+                <p class="text-caption text-light-grey2
+                lg:text-p">Following</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-3 mb-11 gap-x-3 gap-y-3
+    lg:mb-36 lg:gap-y-8 lg:gap-x-8">
+        <div class="">
+            <img src="photo1.png" alt="photo1" class="rounded-xl shadow-[0_4px_6px_-0px_rgba(0,0,0,0.15)] h-full w-full">
+        </div>
+        <div class="col-span-2">
+            <img src="photo2.png" alt="photo2" class="rounded-xl shadow-[0_4px_6px_-0px_rgba(0,0,0,0.15)] h-full w-full">
+        </div>
+        <div class="col-span-2">
+            <img src="photo3.png" alt="photo3" class="rounded-xl shadow-[0_4px_6px_-0px_rgba(0,0,0,0.15)] h-full w-full">
+        </div>
+        <div class="row-span-2">
+            <img src="photo_4.png" alt="photo_4" class="rounded-xl shadow-[0_4px_6px_-0px_rgba(0,0,0,0.15)] h-full w-full">
+        </div>
+        <div class="">
+            <img src="photo6.png" alt="photo6" class="rounded-xl shadow-[0_4px_6px_-0px_rgba(0,0,0,0.15)] h-full w-full">
+        </div>
+        <div class="">
+            <img src="photo5.png" alt="photo5" class="rounded-xl shadow-[0_4px_6px_-0px_rgba(0,0,0,0.15)] h-full w-full">
+        </div>
+    </div>
+
+
+
+
+    <footer class="place-items-center grid sticky top-[100vh]">
+        <p class="text-p font-montserrat pb-6 leading-4 text-footer-grey">
+            created by
+            <span class="underline underline-offset-2 font-bold">
+                Chrisline LIN
+            </span> - devChallenges.io
+        </p>
+    </footer>
+</body>
+
+</html>
