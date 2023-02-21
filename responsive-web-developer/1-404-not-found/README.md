@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://linelinlove.github.io/devchallenges.io/responsive-web-developer/1-404-not-found/404-not-found.html">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/0sJpGxtTQSzvEPHwkWk3">
       Solution
     </a>
     <span> | </span>
