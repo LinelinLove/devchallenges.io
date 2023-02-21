@@ -20,7 +20,12 @@ tailwind.config = {
                 'inconsolata': ['"Inconsolata"'],
                 'space-mono': ['"Space Mono"'],
                 'montserrat': ['"Montserrat"']
-            }
+            },
+            colors: {
+                'light-grey': '#333333',
+                'footer-grey' : '#BDBDBD',
+
+            },
         }
     }
 }
