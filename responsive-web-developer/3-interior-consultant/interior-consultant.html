@@ -13,14 +13,13 @@
 
     <script src="tailwind.config.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://code.jquery.com/jquery-3.6.3.js"
-        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script> -->
 
     <style>
-        .currentpage {
+        .currentpage:hover {
             font-weight: 700;
-            padding-bottom: 10px;
-            border-bottom-width: 2px;
+            border-bottom: 2px solid;
         }
     </style>
 
@@ -28,108 +27,111 @@
 </head>
 
 
-<body id="overflow" class="bg-light-black text-white relative z-0
-lg:mr-20 lg:ml-20 lg:mt-10">
+<body id="overflow" class="bg-light-black text-white">
 
-    <header>
-        <div id="show_menu" class="bg-light-black absolute w-full h-full z-10 -top-4" style="visibility: hidden;">
-            <div class="w-full flex justify-end pt-4 pr-4">
-                <p class="material-icons" id="closemenu">close</p>
-            </div>
-            <div class="flex flex-col h-full pt-64 items-center">
-                <ul class="text-h2 font-montserrat font-medium text-center">
-                    <li class="pb-12"><a href="#home">Home</a></li>
-                    <li class="pb-12"><a href="#collection">Collection</a></li>
-                    <li class="pb-12"><a href="#about">About</a></li>
-                    <li class="pb-12"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <div id="show_menu" class="bg-light-black h-full w-full z-10 fixed hidden">
+        <div class="pr-4 mt-5 flex justify-end">
+            <p class="material-icons" id="closemenu">close</p>
         </div>
-
-        <nav class="grid grid-cols-2 gap-x-4 ml-3 mr-3 mt-4">
-            <div class="place-self-start">
-                <p class="w-max p-2 border border-white text-p leading-4 font-crimson-pro uppercase">
-                    This interior
-                </p>
-            </div>
-            <div class="place-self-end">
-            <p id="openmenu" class="material-icons lg:hidden">
-                menu
-            </p>
-            <ul class="text-h2 font-montserrat font-medium text-center hidden
-            lg:visible lg:flex lg:gap-x-20">
-                <li class="pb-12"><a href="#home">Home</a></li>
-                <li class="pb-12"><a href="#collection">Collection</a></li>
-                <li class="pb-12"><a href="#about">About</a></li>
-                <li class="pb-12"><a href="#contact">Contact</a></li>
+        <div class="flex flex-col relative top-1/4 fixed items-center">
+            <ul class="text-h2 font-montserrat font-medium text-center flex flex-col items-center">
+                <li class="mb-12 pb-2.5 currentpage font-bold"><a href="#home">Home</a></li>
+                <li class="mb-12 pb-2.5 currentpage"><a href="#collection">Collection</a></li>
+                <li class="mb-12 pb-2.5 currentpage"><a href="#about">About</a></li>
+                <li class="mb-12 pb-2.5 currentpage"><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </nav>
-    </header>
-
-    <div class="grid auto-rows-min gap-y-9 mt-10 mb-36 ml-3 mr-3
-    lg:grid-cols-2 lg:gap-x-32">
-
-        <div class="grid gap-y-6
-        lg:gap-x-0 lg:auto-rows-min lg:content-center">
-            <div>
-                <h1 class="text-h1 font-lora leading-10 font-medium
-                lg:text-h0">Modern interior</h1>
-            </div>
-            <div>
-                <p class="text-p font-montserrat font-normal leading-4 mr-32
-                lg:text-p2">
-                    A full-Service residential & commercial
-                    interior design and staging company offering professional
-                    organizing & eco-services.</p>
-            </div>
-
-            <div>
-                <p class="text-p font-montserrat font-bold leading-4 w-max relative
-                lg:text-h2"><a href="#">Read more
-                        <span class="mr-2.5"></span>
-                        <span class="absolute -top-1 material-icons w-min
-                        lg:-top-0.5">arrow_right_alt</span></a>
-                </p>
-            </div>
-
-        </div>
-
-        <div class="relative mb-8">
-            <div>
-                <img src="photo1.png" alt="Interior Design">
-            </div>
-            <div class=
-            "absolute bg-light-black drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] ml-12 mr-6 pl-5 pb-6 pt-4 pr-24 -bottom-20 top-auto right-8">
-                <div class="flex flex-nowrap">
-                    <div>
-                        <div class="w-9 mr-3.5
-                        lg:w-12"><img src="photo2.png" alt="Aliza Webber" class="rounded-full"></div>
-                    </div>
-                    <div class="text-montserrat font-medium">
-                        <p class="text-montserrat leading-4 mb-1.5
-                        lg:mb-2">Aliza Webber</p>
-                        <p class="text-light-grey2 leading-3">Interior designer</p>
-                    </div>
-                </div>
-                <div class="mt-5">
-                    <h1 class="font-lora text-h2 leading-6 font-bold">Designed in 2020 by Aliza Webber</h1>
-                </div>
-            </div>
-
-        </div>
-
     </div>
 
-    <footer class="place-items-center grid sticky top-[100vh]">
-        <p class="text-p font-montserrat pb-6 leading-4 text-light-grey">
-            created by
-            <span class="underline underline-offset-2 font-bold">
-                Chrisline LIN
-            </span> - devChallenges.io
-        </p>
-    </footer>
+    <div class="relative z-0 flex flex-col flex-wrap content-center
+lg:mr-20 lg:ml-20">
+        <header class="main">
+            <nav class="grid grid-cols-2 gap-x-4 ml-3 mr-3 mt-4 lg:mt-10">
+                <div class="place-self-start">
+                    <p class="w-max p-2 border border-white text-p leading-4 font-crimson-pro uppercase">
+                        This interior
+                    </p>
+                </div>
+                <div class="place-self-end">
+                    <p id="openmenu" class="material-icons lg:hidden">
+                        menu
+                    </p>
+                    <ul class="text-h2 font-montserrat font-medium text-center hidden
+            lg:visible lg:flex lg:gap-x-20">
+                        <li class="mb-12 pb-2.5 currentpage font-bold"><a href="#home">Home</a></li>
+                        <li class="mb-12 pb-2.5 currentpage"><a href="#collection">Collection</a></li>
+                        <li class="mb-12 pb-2.5 currentpage"><a href="#about">About</a></li>
+                        <li class="mb-12 pb-2.5 currentpage"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
+        <div class="grid auto-rows-min gap-y-9 mt-10 mb-36 ml-3 mr-3 main-grid
+    lg:grid-cols-2 lg:gap-x-32">
+
+            <div class="grid gap-y-6
+        lg:gap-x-0 lg:auto-rows-min lg:content-center">
+                <div>
+                    <h1 class="text-h1 font-lora leading-10 font-medium
+                lg:text-h0">Modern interior</h1>
+                </div>
+                <div>
+                    <p class="text-p font-montserrat font-normal leading-4 mr-32
+                lg:text-p2">
+                        A full-Service residential & commercial
+                        interior design and staging company offering professional
+                        organizing & eco-services.</p>
+                </div>
+
+                <div>
+                    <p class="text-p font-montserrat font-bold leading-4 w-max relative
+                lg:text-h2"><a href="#">Read more
+                            <span class="mr-2.5"></span>
+                            <span class="absolute -top-1 material-icons w-min
+                        lg:-top-0.5">arrow_right_alt</span></a>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="relative mb-8 main">
+                <div>
+                    <img src="photo1.png" alt="Interior Design">
+                </div>
+                <div
+                    class="absolute bg-light-black drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] ml-12 mr-6 pl-5 pb-6 pt-4 pr-24 -bottom-20 top-auto right-8">
+                    <div class="flex flex-nowrap">
+                        <div>
+                            <div class="w-9 mr-3.5
+                        lg:w-12"><img src="photo2.png" alt="Aliza Webber" class="rounded-full"></div>
+                        </div>
+                        <div class="text-montserrat font-medium">
+                            <p class="text-montserrat leading-4 mb-1.5
+                        lg:mb-2">Aliza Webber</p>
+                            <p class="text-light-grey2 leading-3">Interior designer</p>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h1 class="font-lora text-h2 leading-6 font-bold">Designed in 2020 by Aliza Webber</h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="place-items-center grid sticky top-[100vh] main-grid">
+            <p class="text-p font-montserrat pb-6 leading-4 text-light-grey">
+                created by
+                <span class="underline underline-offset-2 font-bold">
+                    <a href="https://github.com/LinelinLove">
+                        Chrisline LIN
+                    </a>
+                </span> - devChallenges.io
+            </p>
+        </footer>
+    </div>
 </body>
 <script src="script.js"></script>
 

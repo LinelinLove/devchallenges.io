@@ -1,21 +1,13 @@
-$(document).ready(function () {
-    
-    $('ul li a').hover(function () {
-        $('li a').removeClass("currentpage");
-        $(this).addClass("currentpage");
-    });
+let bodyoverflow = document.getElementById("overflow");
+let targetDiv = document.getElementById("show_menu");
+let open = document.getElementById("openmenu");
 
-    const targetDiv = document.getElementById("show_menu");
-    const bodyoverflow = document.getElementById("overflow");
-    const btn = document.getElementById("openmenu");
-    btn.onclick = function () {
-        targetDiv.style.visibility = "visible";
-        bodyoverflow.style.overflow = "hidden";
-    };
+open.addEventListener('click', function () {
+    targetDiv.style.display = "block";
+})
 
-    const clsbtn = document.getElementById("closemenu");
-    clsbtn.onclick = function () {
-        targetDiv.style.visibility = "hidden";
-        bodyoverflow.style.overflow = "auto";
-    };
-});
+
+let close = document.getElementById("closemenu");
+close.addEventListener('click', function () {
+    targetDiv.style.display = "none";
+})
