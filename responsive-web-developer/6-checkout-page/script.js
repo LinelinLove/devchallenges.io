@@ -79,17 +79,87 @@ for (let i = 0; i < item.length; i++) {
     }
 }
 
+
+let country = document.getElementById("country")
+
+
+// to add shake animation where the input is incorrect
+let checkDiv = document.querySelectorAll(".check-div")
+
+
+function validatePhoneNumber(input_str) {
+    var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+    return re.test(input_str);
+}
+
+let checkIcon = document.querySelectorAll(".check-icon")
+
+let input = document.querySelectorAll("input")
+let listInputs = []
+for (let i = 0; i < input.length - 2; i++) {
+    listInputs.push(input[i])
+}
+listInputs.splice(-1, 0, country)
+
+for (let i = 0; i < listInputs.length; i++) {
+    listInputs[i].addEventListener('input', function () {
+        if (listInputs[i].checkValidity()) {
+            if (listInputs[i].id == "phone") {
+                if (validatePhoneNumber(listInputs[i].value)) {
+                    checkIcon[i].innerHTML = 'check_circle'
+                    if (checkIcon[i].classList.contains('text-error')) {
+                        checkIcon[i].classList.remove('text-error')
+                    }
+                    checkIcon[i].classList.add('text-checked')
+                } else {
+                    checkIcon[i].innerHTML = 'error'
+                    if (checkIcon[i].classList.contains('text-checked')) {
+                        checkIcon[i].classList.remove('text-checked')
+                    }
+                    checkIcon[i].classList.add('text-error')
+                }
+            } else {
+                checkIcon[i].innerHTML = 'check_circle'
+                if (checkIcon[i].classList.contains('text-error')) {
+                    checkIcon[i].classList.remove('text-error')
+                }
+                checkIcon[i].classList.add('text-checked')
+            }
+        } else {
+            checkIcon[i].innerHTML = 'error'
+            if (checkIcon[i].classList.contains('text-checked')) {
+                checkIcon[i].classList.remove('text-checked')
+            }
+            checkIcon[i].classList.add('text-error')
+        }
+    });
+}
+
+function isValidForm() {
+    let cpt = 0
+    for (let i = 0; i < checkIcon.length; i++) {
+        if (checkIcon[i].innerHTML == 'check_circle') {
+            cpt++
+        }
+        // else {
+        //     checkDiv[i].classList.add("animate-shaking")
+        // }
+    }
+    if (cpt == checkIcon.length) {
+        return true
+    } else { return false }
+}
+
 // to avoid the refresh after submit
 let form = document.querySelector("form");
 form.addEventListener('submit', function (event) {
     event.preventDefault();
-    alert("its valid")
+    if (isValidForm()) {
+        alert("The form is valid")
+    }
+    // for (let i = 0; i < checkDiv.length; i++) {
+    //     if (checkDiv[i].classList.contains("animate-shaking")) {
+    //         checkDiv[i].classList.remove("animate-shaking")
+    //     }
+    // }
 });
-
-// let checkDiv = document.querySelectorAll(".check-div")
-// for (let i = 0; i < checkDiv.length; i++) {
-//     checkDiv[i].classList.add("animate-shaking")
-// }
-
-
-let checkIcon = document.querySelectorAll(".check-icon")

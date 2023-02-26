@@ -10,6 +10,6 @@ Practicing __HTML/CSS/Tailwind CSS/JS__
 - Challenge 3 : "[Interior Consultant](https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/3-interior-consultant)"
 - Challenge 4 : "[Recipe Page](https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/4-recipe-page)"
 - Challenge 5 : "[My Gallery](https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/5-my-gallery)"
-- Challenge 6 : "[Checkout Page]()" - On going
+- Challenge 6 : "[Checkout Page](https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/6-checkout-page)" - On going
 - Challenge 7 : "[Edie homepage]()" - Not started yet
 - Challenge 8 : "[Portfolio]()" - Not started yet
