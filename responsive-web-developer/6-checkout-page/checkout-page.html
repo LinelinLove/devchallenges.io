@@ -13,237 +13,281 @@
     <title>Checkout Page</title>
 </head>
 
-<body class="font-montserrat font-semibold">
+<body class="font-montserrat font-semibold lg:mr-auto lg:ml-auto lg:max-w-7xl ">
     <!-- main -->
     <section class="mr-3 ml-3 mt-8
-    flex flex-col gap-y-5
-    ">
-        <div>
-            <p class="text-p2 text-dark-grey2 leading-8">Checkout</p>
+    lg:mr-auto lg:ml-auto w-fit lg:mt-16">
+
+        <div class="w-fit mb-5 lg:mb-12">
+            <p class="text-p2 text-dark-grey2 leading-8
+            lg:text-h0 lg:leading-10">Checkout</p>
         </div>
+        <div class="flex flex-col gap-y-10 lg:justify-center lg:items-start
+        lg:flex-row-reverse lg:gap-x-28 w-fit">
+            <!-- div grise -->
+            <div class="flex flex-col gap-y-20 bg-light-grey rounded-xl
+            pt-8 pl-7 pr-7 pb-6
+            lg:pt-9 lg:pl-8 lg:pr-8 lg:pb-7">
+                <!-- items -->
+                <div class="flex flex-col gap-y-7">
 
-        <!-- div grise -->
-        <div class="flex flex-col gap-y-20 bg-light-grey rounded-xl
-        pt-8 pl-7 pr-7 pb-6">
-            <!-- liste -->
-            <div class="flex flex-col gap-y-7">
-
-                <!-- sac -->
-                <div class="flex flex-row gap-x-4 item">
-                    <div>
-                        <img src="photo1.png" alt="" class="h-32 rounded-xl">
-                    </div>
-                    <div class="flex flex-col items-start justify-between">
-                        <div class="flex flex-col gap-y-3">
-                            <div>
-                                <p class="text-caption leading-4 text-dark-grey2">Vintage Backbag</p>
-                            </div>
-                            <div class="flex flex-row gap-x-3">
+                    <!-- bag -->
+                    <div class="flex flex-row gap-x-4 item">
+                        <div>
+                            <img src="photo1.png" alt="" class="h-32 rounded-xl lg:h-36">
+                        </div>
+                        <div class="flex flex-col items-start justify-between">
+                            <div class="flex flex-col gap-y-3">
                                 <div>
-                                    <p class="text-p-orange text-p leading-4 newPrice">$54.99</p>
+                                    <p class="text-caption leading-4 text-dark-grey2
+                                    lg:text-h1 lg:leading-5">Vintage Backbag</p>
+                                </div>
+                                <div class="flex flex-row gap-x-3">
+                                    <div>
+                                        <p class="text-p-orange text-p leading-4 newPrice
+                                        lg:text-h1 lg:leading-5">$54.99</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-m line-through text-dark-grey2 leading-3 oldPrice
+                                        lg:text-caption lg:leading-4">$94.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-row gap-x-8 border-2 border-light-grey3 pt-3 pb-4 pr-2.5 pl-2.5 rounded-xl items-center">
+                                <div
+                                    class="bg-light-grey2 rounded w-5 h-5 hover:bg-p-orange2 active:bg-p-orange3 hover:text-white active:text-white text-light-grey3 cursor-pointer">
+                                    <span class="material-icons text-h2 select-none buttonQuantity">remove</span>
                                 </div>
                                 <div>
-                                    <p class="text-m line-through text-dark-grey2 leading-3 oldPrice">$94.99</p>
+                                    <p class="text-h1 leading-5 itemQuantity">1</p>
+                                </div>
+                                <div
+                                    class="bg-light-grey2 rounded w-5 h-5 hover:bg-p-orange2 active:bg-p-orange3 hover:text-white active:text-white text-light-grey3 cursor-pointer">
+                                    <span class="material-icons text-h2 select-none buttonQuantity">add</span>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="flex flex-row gap-x-8 border-2 border-light-grey3 pt-3 pb-4 pr-2.5 pl-2.5 rounded-xl items-center">
+                    </div>
+
+                    <!-- shoes -->
+                    <div class="flex flex-row gap-x-4 item">
+                        <div>
+                            <img src="photo2.png" alt="" class="h-32 rounded-xl lg:h-36">
+                        </div>
+                        <div class="flex flex-col items-start justify-between">
+                            <div class="flex flex-col gap-y-3">
+                                <div>
+                                    <p class="text-caption leading-4 text-dark-grey2
+                                    lg:text-h1 lg:leading-5">Levi Shoes</p>
+                                </div>
+                                <div class="flex flex-row gap-x-3">
+                                    <div>
+                                        <p class="text-p-orange text-p leading-4 newPrice
+                                        lg:text-h1 lg:leading-5">$74.99</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-m line-through text-dark-grey2 leading-3 oldPrice
+                                        lg:text-caption lg:leading-4">$124.99</p>
+                                    </div>
+                                </div>
+                            </div>
                             <div
-                                class="bg-light-grey2 rounded w-5 h-5 hover:bg-p-orange2 active:bg-p-orange3 hover:text-white active:text-white text-light-grey3 cursor-pointer">
-                                <span class="material-icons text-h2 select-none buttonQuantity">remove</span>
+                                class="flex flex-row gap-x-8 border-2 border-light-grey3 pt-3 pb-4 pr-2.5 pl-2.5 rounded-xl items-center">
+                                <div
+                                    class="bg-light-grey2 rounded w-5 h-5 hover:bg-p-orange2 active:bg-p-orange3 hover:text-white active:text-white text-light-grey3 cursor-pointer">
+                                    <span class="material-icons text-h2 select-none buttonQuantity">remove</span>
+                                </div>
+                                <div>
+                                    <p class="text-h1 leading-5 itemQuantity">1</p>
+                                </div>
+                                <div
+                                    class="bg-light-grey2 rounded w-5 h-5 hover:bg-p-orange2 active:bg-p-orange3 hover:text-white active:text-white text-light-grey3 cursor-pointer">
+                                    <span class="material-icons text-h2 select-none buttonQuantity">add</span>
+                                </div>
                             </div>
-                            <div>
-                                <p class="text-h1 leading-5 itemQuantity">1</p>
-                            </div>
-                            <div
-                                class="bg-light-grey2 rounded w-5 h-5 hover:bg-p-orange2 active:bg-p-orange3 hover:text-white active:text-white text-light-grey3 cursor-pointer">
-                                <span class="material-icons text-h2 select-none buttonQuantity">add</span>
-                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- total -->
+                <div class="flex flex-col gap-y-2 text-p leading-4 text-dark-grey
+                lg:text-h2 lg:leading-5">
+                    <div class="flex flex-row justify-between pt-3 border-t-2 border-footer-grey">
+                        <div>
+                            <p>Shipping</p>
+                        </div>
+                        <div id="shipping">
+                            <p class="lg:text-p">$19</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between pt-3 border-t-2 border-footer-grey">
+                        <div>
+                            <p>Total</p>
+                        </div>
+                        <div id="total">
+                            <p class="lg:text-p">$148.98</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- shoes -->
-                <div class="flex flex-row gap-x-4 item">
-                    <div>
-                        <img src="photo2.png" alt="" class="h-32 rounded-xl">
-                    </div>
-                    <div class="flex flex-col items-start justify-between">
-                        <div class="flex flex-col gap-y-3">
-                            <div>
-                                <p class="text-caption leading-4 text-dark-grey2">Levi Shoes</p>
-                            </div>
-                            <div class="flex flex-row gap-x-3">
-                                <div>
-                                    <p class="text-p-orange text-p leading-4 newPrice">$74.99</p>
-                                </div>
-                                <div>
-                                    <p class="text-m line-through text-dark-grey2 leading-3 oldPrice">$124.99</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="flex flex-row gap-x-8 border-2 border-light-grey3 pt-3 pb-4 pr-2.5 pl-2.5 rounded-xl items-center">
-                            <div
-                                class="bg-light-grey2 rounded w-5 h-5 hover:bg-p-orange2 active:bg-p-orange3 hover:text-white active:text-white text-light-grey3 cursor-pointer">
-                                <span class="material-icons text-h2 select-none buttonQuantity">remove</span>
-                            </div>
-                            <div>
-                                <p class="text-h1 leading-5 itemQuantity">1</p>
-                            </div>
-                            <div
-                                class="bg-light-grey2 rounded w-5 h-5 hover:bg-p-orange2 active:bg-p-orange3 hover:text-white active:text-white text-light-grey3 cursor-pointer">
-                                <span class="material-icons text-h2 select-none buttonQuantity">add</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
             </div>
-            <!-- total -->
-            <div class="flex flex-col gap-y-2 text-p leading-4 text-dark-grey">
-                <div class="flex flex-row justify-between pt-3 border-t-2 border-footer-grey">
-                    <div>Shipping</div>
-                    <div id="shipping">$19</div>
-                </div>
-                <div class="flex flex-row justify-between pt-3 border-t-2 border-footer-grey">
-                    <div>Total</div>
-                    <div id="total">$148.98</div>
-                </div>
-            </div>
-        </div>
 
-        <!-- formulaire -->
-        <form action="" class="flex flex-col gap-y-5">
-            <fieldset class="pt-3">
-                <!-- contact -->
-                <legend>Contact infomation</legend>
-                <div class="flex flex-col gap-y-4">
+            <!-- formulaire -->
+            <form action="" class="flex flex-col gap-y-5">
+                <fieldset class="pt-3">
 
-                    <!-- mail -->
-                    <div class="flex flex-col gap-y-1.5 check-div">
-                        <label for="mail" class="dark-grey3 text-m leading-3">E-mail</label>
-                        <div
-                            class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
-                            hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
-                            <span class="material-icons text-h2 select-none">mail</span>
+                    <!-- contact -->
+                    <legend class="text-p leading-4
+                    lg:text-h2 lg:leading-5">Contact infomation</legend>
+                    <div class="flex flex-col gap-y-4 
+                    lg:gap-y-5">
 
-                            <input type="email" name="mail" id="mail" placeholder="Enter your email..." class="leading-4 text-caption w-full outline-none text-dark-grey
-                                bg-inherit" required>
-                            <span class="material-icons check-icon text-h2 select-none"></span>
-                        </div>
-                    </div>
-
-                    <!-- phone -->
-                    <div class="flex flex-col gap-y-1.5 check-div">
-                        <label for="phone" class="dark-grey3 text-m leading-3">Phone</label>
-                        <div
-                            class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
-                            hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
-                            <span class="material-icons text-h2 select-none">call</span>
-                            <input type="tel" name="phone" id="phone" placeholder="Enter your phone..." maxlength="12"
-                                class="leading-4 text-caption w-full outline-none text-dark-grey
-                                bg-inherit" required>
-                                <span class="material-icons check-icon text-h2 select-none"></span>
-                        </div>
-                    </div>
-
-                </div>
-            </fieldset>
-
-            <fieldset class="pt-3 mt-5">
-                <legend>Shipping address</legend>
-
-                <div class="flex flex-col gap-y-4">
-
-                    <!-- name -->
-                    <div class="flex flex-col gap-y-1.5 check-div">
-                        <label for="name" class="dark-grey3 text-m leading-3">Full name</label>
-                        <div
-                            class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
-                            hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
-                            <span class="material-icons text-h2 select-none">account_circle</span>
-                            <input type="text" name="name" id="name" placeholder="Rodney Cotton" class="leading-4 text-caption w-full outline-none text-dark-grey
-                                bg-inherit" required>
-                                <span class="material-icons check-icon text-h2 select-none"></span>
-                        </div>
-                    </div>
-
-                    <!-- address -->
-                    <div class="flex flex-col gap-y-1.5 check-div">
-                        <label for="address" class="dark-grey3 text-m leading-3">Address</label>
-                        <div
-                            class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
-                            hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
-                            <span class="material-icons text-h2 select-none">home</span>
-                            <input type="text" name="address" id="address" placeholder="Your address.." class="leading-4 text-caption w-full outline-none text-dark-grey
-                                bg-inherit" required>
-                                <span class="material-icons check-icon text-h2 select-none"></span>
-                        </div>
-                    </div>
-
-                    <!-- city -->
-                    <div class="flex flex-col gap-y-1.5 check-div">
-                        <label for="city" class="dark-grey3 text-m leading-3">City</label>
-                        <div
-                            class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
-                            hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
-                            <span class="material-icons text-h2 select-none">location_city</span>
-                            <input type="text" name="city" id="city" placeholder="Your city.." class="leading-4 text-caption w-full outline-none text-dark-grey
-                                bg-inherit" required>
-                                <span class="material-icons check-icon text-h2 select-none"></span>
-                        </div>
-                    </div>
-
-                    <!-- country -->
-                    <div class="flex flex-row gap-x-5 check-div">
-                        <div class="flex flex-col gap-y-1.5 flex-1">
-                            <label for="country" class="dark-grey3 text-m leading-3">Country</label>
+                        <!-- mail -->
+                        <div class="flex flex-col gap-y-1.5 check-div">
+                            <label for="mail" class="dark-grey3 text-m leading-3
+                            lg:text-caption lg:leading-4">E-mail</label>
                             <div
                                 class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
-                                hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
-                                <span class="material-icons text-h2 select-none">public</span>
-                                <select name="country" id="country" placeholder="Your country.." class="leading-4 text-caption w-full outline-none text-dark-grey
-                                    bg-inherit" required>
-                                    <option value selected disabled hidden>Your country...</option>
-                                </select>
+                            hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
+                                <span class="material-icons text-h2 select-none
+                                lg:text-h3">mail</span>
+
+                                <input type="email" name="mail" id="mail" placeholder="Enter your email..." class="leading-4 text-caption w-full outline-none text-dark-grey
+                                bg-inherit
+                                lg:text-h1 lg:leading-5" required>
                                 <span class="material-icons check-icon text-h2 select-none"></span>
                             </div>
                         </div>
 
-                        <!-- postal code -->
-                        <div class="flex flex-col gap-y-1.5 flex-1 check-div">
-                            <label for="postalcode" class="dark-grey3 text-m leading-3">Postal code</label>
+                        <!-- phone -->
+                        <div class="flex flex-col gap-y-1.5 check-div">
+                            <label for="phone" class="dark-grey3 text-m leading-3
+                            lg:text-caption lg:leading-4">Phone</label>
                             <div
                                 class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
+                            hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
+                                <span class="material-icons text-h2 select-none
+                                lg:text-h3">call</span>
+                                <input type="tel" name="phone" id="phone" placeholder="Enter your phone..."
+                                    maxlength="12" class="leading-4 text-caption w-full outline-none text-dark-grey
+                                bg-inherit
+                                lg:text-h1 lg:leading-5" required>
+                                <span class="material-icons check-icon text-h2 select-none"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <fieldset class="pt-3 mt-5
+                lg:mt-9 lg:w-[29rem]">
+                    <legend class="text-p leading-4
+                    lg:text-h2 lg:leading-5">Shipping address</legend>
+
+                    <div class="flex flex-col gap-y-4">
+
+                        <!-- name -->
+                        <div class="flex flex-col gap-y-1.5 check-div">
+                            <label for="name" class="dark-grey3 text-m leading-3
+                            lg:text-caption lg:leading-4">Full name</label>
+                            <div
+                                class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
+                            hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
+                                <span class="material-icons text-h2 select-none
+                                lg:text-h3">account_circle</span>
+                                <input type="text" name="name" id="name" placeholder="Rodney Cotton" class="leading-4 text-caption w-full outline-none text-dark-grey
+                                bg-inherit
+                                lg:text-h1 lg:leading-5" required>
+                                <span class="material-icons check-icon text-h2 select-none"></span>
+                            </div>
+                        </div>
+
+                        <!-- address -->
+                        <div class="flex flex-col gap-y-1.5 check-div">
+                            <label for="address" class="dark-grey3 text-m leading-3
+                            lg:text-caption lg:leading-4">Address</label>
+                            <div
+                                class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
+                            hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
+                                <span class="material-icons text-h2 select-none
+                                lg:text-h3">home</span>
+                                <input type="text" name="address" id="address" placeholder="Your address.." class="leading-4 text-caption w-full outline-none text-dark-grey
+                                bg-inherit
+                                lg:text-h1 lg:leading-5" required>
+                                <span class="material-icons check-icon text-h2 select-none"></span>
+                            </div>
+                        </div>
+
+                        <!-- city -->
+                        <div class="flex flex-col gap-y-1.5 check-div">
+                            <label for="city" class="dark-grey3 text-m leading-3
+                            lg:text-caption lg:leading-4">City</label>
+                            <div
+                                class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
+                            hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
+                                <span class="material-icons text-h2 select-none
+                                lg:text-h3">location_city</span>
+                                <input type="text" name="city" id="city" placeholder="Your city.." class="leading-4 text-caption w-full outline-none text-dark-grey
+                                bg-inherit
+                                lg:text-h1 lg:leading-5" required>
+                                <span class="material-icons check-icon text-h2 select-none"></span>
+                            </div>
+                        </div>
+
+                        <!-- country -->
+                        <div class="flex flex-row gap-x-5 check-div">
+                            <div class="flex flex-col gap-y-1.5 flex-1">
+                                <label for="country" class="dark-grey3 text-m leading-3
+                                lg:text-caption lg:leading-4">Country</label>
+                                <div
+                                    class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
                                 hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
-                                <span class="material-icons text-h2 select-none">markunread_mailbox</span>
-                                <input type="text" name="postalcode" id="postalcode" placeholder="Your postal code.."
-                                    class="leading-4 text-caption w-full outline-none text-dark-grey
-                                    bg-inherit" required>
+                                    <span class="material-icons text-h2 select-none
+                                    lg:text-h3">public</span>
+                                    <select name="country" id="country" placeholder="Your country.." class="leading-4 text-caption w-full outline-none text-dark-grey
+                                    bg-inherit
+                                    lg:text-h1 lg:leading-5" required>
+                                        <option value selected disabled hidden>Your country...</option>
+                                    </select>
                                     <span class="material-icons check-icon text-h2 select-none"></span>
+                                </div>
+                            </div>
+
+                            <!-- postal code -->
+                            <div class="flex flex-col gap-y-1.5 flex-1 check-div">
+                                <label for="postalcode" class="dark-grey3 text-m leading-3
+                                lg:text-caption lg:leading-4">Postal code</label>
+                                <div
+                                    class="flex flex-row gap-x-3 border-light-grey3 rounded-xl border p-3 text-light-grey3
+                                hover:bg-light-grey focus-within:bg-p-orange0 focus-within:border-p-orange focus-within:hover:bg-p-orange0 focus-within:text-p-orange">
+                                    <span class="material-icons text-h2 select-none
+                                    lg:text-h3">markunread_mailbox</span>
+                                    <input type="text" name="postalcode" id="postalcode"
+                                        placeholder="Your postal code.." class="leading-4 text-caption w-full outline-none text-dark-grey
+                                    bg-inherit
+                                    lg:text-h1 lg:leading-5" required>
+                                    <span class="material-icons check-icon text-h2 select-none"></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- checkbox -->
-                    <div class="flex flex-row gap-x-2 hover:bg-light-grey">
-                        <input type="checkbox" name="saveinfo" id="saveinfo" class="accent-p-orange">
-                        <label for="saveinfo"
-                            class="leading-3 text-caption text-dark-grey3 bg-inherit w-full cursor-pointer">Save this
-                            information for next time</label>
+                        <!-- checkbox -->
+                        <div class="flex flex-row gap-x-2 hover:bg-light-grey">
+                            <input type="checkbox" name="saveinfo" id="saveinfo" class="accent-p-orange">
+                            <label for="saveinfo" class="leading-3 text-caption text-dark-grey3 bg-inherit w-full cursor-pointer
+                                lg:text-p lg:leading-4">
+                                Save this information for next time</label>
+                        </div>
                     </div>
+                </fieldset>
+                <div class="self-end text-white"><input type="submit" value="Continue"
+                        class="py-4 px-11 bg-p-orange rounded-xl hover:bg-p-orange2 active:bg-p-orange3 cursor-pointer">
                 </div>
-            </fieldset>
-            <div class="self-end text-white"><input type="submit" value="Continue"
-                    class="py-4 px-11 bg-p-orange rounded-xl hover:bg-p-orange2 active:bg-p-orange3 cursor-pointer">
-            </div>
 
-        </form>
-
+            </form>
+        </div>
 
 
 
