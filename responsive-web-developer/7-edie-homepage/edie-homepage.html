@@ -20,15 +20,18 @@
     <title>Edie Homepage</title>
 </head>
 
-<body class="mt-4 ml-2.5 mr-4">
+<body class="mt-4">
 
-    <header class="flex flex-row justify-between mb-12">
-        <p class="font-heebo font-extrabold text-h2 leading-9 text-grey-dark">Edie</p>
+    <header class="flex flex-row justify-between mb-12 ml-2.5 mr-4">
+        <p class="font-heebo font-extrabold text-h2 leading-9 text-grey-dark"
+        id="home">
+            Edie
+        </p>
         <span class="material-icons-round">menu</span>
     </header>
 
     <!-- main -->
-    <div class="flex flex-col gap-y-[104px]">
+    <div class="flex flex-col gap-y-[104px] ml-2.5 mr-4">
 
         <!-- first part -->
         <div class="flex flex-col gap-y-5 font-poppins">
@@ -74,7 +77,8 @@
 
         <!-- second part -->
         <div class="">
-            <h1 class="grey-dark font-semibold text-h2 leading-9 text-grey-dark ml-8 mb-11 mr-20">
+            <h1 class="grey-dark font-semibold text-h2 leading-9 text-grey-dark ml-8 mb-11 mr-20"
+            id="services">
                 We offer high demand services
             </h1>
             <div class="flex flex-col gap-y-9">
@@ -127,7 +131,8 @@
 
         <!-- third part -->
         <div>
-            <h1 class="grey-dark font-semibold text-h2 leading-9 text-grey-dark ml-8 mb-11 mr-12">
+            <h1 class="grey-dark font-semibold text-h2 leading-9 text-grey-dark ml-8 mb-11 mr-12"
+            id="ourworks">
                 Good design means good business
             </h1>
 
@@ -167,9 +172,11 @@
         <!-- fourth part -->
         <div class="font-poppins">
             <p class="font-semibold text-h4 leading-7 text-p-red mb-3">Meet the team</p>
-            <h1 class="text-grey-dark text-h1 font-semibold leading-[54px] mr-6 mb-5">We are chilled and a laidback team</h1>
-            <p class="text-grey-primary text-h5 leading-6 mr-8 mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            
+            <h1 class="text-grey-dark text-h1 font-semibold leading-[54px] mr-6 mb-5">We are chilled and a laidback team
+            </h1>
+            <p class="text-grey-primary text-h5 leading-6 mr-8 mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.</p>
+
             <div class="flex flex-row gap-x-2 items-center">
                 <div><img src="person3.png" alt="person3" class="rounded-3xl"></div>
                 <div class="flex flex-col gap-y-2">
@@ -180,8 +187,10 @@
         </div>
 
         <div class="font-poppins">
-            <h1 class="grey-dark font-semibold text-h2 leading-9 text-grey-dark mb-5">
-                “Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.”
+            <h1 class="grey-dark font-semibold text-h2 leading-9 text-grey-dark mb-5"
+            id="clients">
+                “Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented
+                team.”
             </h1>
             <div class="flex flex-row gap-x-8">
                 <div class="w-20 h-20">
@@ -197,15 +206,52 @@
     </div>
     <!-- end main -->
 
-    <footer class="place-items-center grid sticky top-[100vh] mt-24">
-        <p class="text-p font-montserrat pb-6 leading-4 text-footer-grey">
-            created by
-            <span class="underline underline-offset-2 font-bold">
-                <a href="https://github.com/LinelinLove">
-                    Chrisline LIN
-                </a>
-            </span> - devChallenges.io
-        </p>
+    <footer class="mt-24 bg-bg-footer text-white pt-9 px-10">
+
+        <div class="flex flex-col gap-y-16">
+            <div class="text-h4 leading-9">
+                <p><a href="#home">Home</a> </p>
+                <p><a href="#services">Services</a></p>
+                <p><a href="#ourworks">Our Works</a></p>
+                <p><a href="#clients">Clients</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+
+            <div>
+                <p class="font-extrabold font-heebo text-h2 leading-9">Edie</p>
+                <div class="flex flex-row gap-x-3">
+                    <div><img src="instagram.svg" alt="instagram"></div>
+                    <div><img src="linkedin.svg" alt="linkedin"></div>
+                    <div><img src="twitter.svg" alt="twitter"></div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col gap-y-2 font-poppins">
+                <p class="font-medium text-m leading-4 text-grey-light"
+                id="contact">
+                    Want us to contact you?
+                </p>
+                <div class="mr-8 relative w-full">
+                    <input type="email" name="mail" id="mail" placeholder="Email"
+                        class="text-footer-grey bg-grey-white py-3.5 pl-5 rounded-xl w-full">
+                    <button class="font-medium text-p leading-5 text-grey-white bg-p-blue py-3 px-5 rounded-xl 
+                    absolute right-1 top-1">
+                        Join
+                    </button>
+                </div>
+            </div>
+
+
+            <p class="text-p font-montserrat pb-6 leading-4 whitespace-nowrap place-self-center mt-[90px]">
+                created by
+                <span class="underline underline-offset-2 font-bold">
+                    <a href="https://github.com/LinelinLove">
+                        Chrisline LIN
+                    </a>
+                </span> - devChallenges.io
+            </p>
+        </div>
     </footer>
 </body>
 
