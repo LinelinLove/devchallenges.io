@@ -1,6 +1,7 @@
 tailwind.config = {
     theme: {
         fontSize: {
+            h0: ['48px', '48px'],
             h1: ['36px', '36px'],
             h2: ['24px', '24px'],
             h3: ['22px', '22px'],
@@ -18,6 +19,7 @@ tailwind.config = {
             },
             colors: {
                 'p-blue': '#2D9CDB',
+                'p-blue-dark':'#1C729F',
                 'p-green': '#27AE60',
                 'p-red': '#EB5757',
                 'grey-white': '#F2F2F2',
