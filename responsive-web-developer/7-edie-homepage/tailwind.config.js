@@ -19,6 +19,7 @@ tailwind.config = {
             },
             colors: {
                 'p-blue': '#2D9CDB',
+                'p-blue-primary':'#228BC4',
                 'p-blue-dark':'#1C729F',
                 'p-green': '#27AE60',
                 'p-red': '#EB5757',
