@@ -12,4 +12,4 @@ Practicing __HTML/CSS/Tailwind CSS/JS__
 - Challenge 5 : "[My Gallery](https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/5-my-gallery)"
 - Challenge 6 : "[Checkout Page](https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/6-checkout-page)"
 - Challenge 7 : "[Edie homepage](https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/7-edie-homepage)"
-- Challenge 8 : "[Portfolio]()" - On going
+- Challenge 8 : "[Portfolio](https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/8-portfolio)" - On going
