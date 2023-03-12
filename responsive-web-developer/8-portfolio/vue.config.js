@@ -3,8 +3,8 @@ module.exports = defineConfig({
   transpileDependencies: true,
 })
 
-module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? 'devchallenges.io/responsive-web-developer/8-portfolio/dist/'
-    : '/'
-}
+// module.exports = {
+//   publicPath: process.env.NODE_ENV === 'production'
+//     ? 'devchallenges.io/responsive-web-developer/8-portfolio/dist/'
+//     : '/'
+// }

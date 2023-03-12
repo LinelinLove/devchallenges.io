@@ -32,7 +32,8 @@ module.exports = {
               'grey-primary': '#4F4F4F',
               'grey-dark': '#333333',
               'footer-grey': '#BDBDBD',
-              'bg-footer': '#100E1D'
+              'bg-footer': '#100E1D',
+              'bar' : '#C4C4C4'
 
               // 'dark-grey2': '#4E5150',
               // 'light-black': '#181719',

@@ -1,11 +1,92 @@
 {
-    "profile": [
-        {
+    "data": {
+        "profile": {
             "name": "Chrisline Lin",
             "job": "Front-end developer",
+            "image": "profile.jpg",
+            "alt": "Avatar",
             "mail": "linelinlove@example.com",
             "tel": "(+33) 000 000 000",
             "description": "Self-motivated developer, who is willing to learn and create outstanding UI applications."
-        }
-    ]
+        },
+        "experiences": [
+            {
+                "date": "Feb 2017 - Current",
+                "job": "Front-end developer",
+                "image": "adidas.png",
+                "alt": "adidas",
+                "description": "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
+            },
+            {
+                "date": "Aug 2016 - Feb 2018",
+                "job": "Full-stack developer",
+                "image": "hm.png",
+                "alt": "h&m",
+                "description": "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
+            },
+            {
+                "date": "Jun 2015 - Aug 2016",
+                "job": "Junior front-end developer",
+                "image": "nivea.png",
+                "alt": "nivea",
+                "description": "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
+            }
+        ],
+        "hobbies": [
+            {
+                "name": "Gaming",
+                "image": "gaming.png",
+                "alt": "gaming",
+                "description": "Quisque feugiat malesuada molestie."
+            },
+            {
+                "name": "Cooking",
+                "image": "cooking.png",
+                "alt": "cooking",
+                "description": "Quisque feugiat malesuada molestie."
+            },
+            {
+                "name": "Drawing",
+                "image": "drawing.png",
+                "alt": "drawing",
+                "description": "Quisque feugiat malesuada molestie."
+            }
+        ],
+        "frontend": [
+            {
+                "name": "React",
+                "level": 7
+            },
+            {
+                "name": "JavaScript",
+                "level": 8
+            },
+            {
+                "name": "CSS",
+                "level": 9
+            },
+            {
+                "name": "Vue",
+                "level": 7
+            },
+            {
+                "name": "HTML",
+                "level": 9
+            },
+            {
+                "name": "React Native",
+                "level": 9
+            }
+        ],
+        "design": [
+            {
+                "name": "Figma",
+                "level": 7
+            },
+            {
+                "name": "Photoshop",
+                "level": 8
+            }
+        ]
+    }
 }

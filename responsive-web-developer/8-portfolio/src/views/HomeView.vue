@@ -1,19 +1,32 @@
 <template>
-  <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <Profile></Profile>
+  <div class="flex flex-row">
+    <div>
+      <Profile />
+      <Experiences />
+      <Hobbies />
+    </div>
+
+    <div class="flex flex-row">
+      <BarLevel name="frontend"></BarLevel>
+      <BarLevel name="design"></BarLevel>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Profile from '@/components/Profile.vue'
+import Profile from "@/components/Profile.vue";
+import Experiences from "@/components/Experiences.vue";
+import Hobbies from "@/components/Hobbies.vue";
+import BarLevel from "@/components/BarLevel.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
-    Profile
-  }
-}
+    Profile,
+    Experiences,
+    Hobbies,
+    BarLevel,
+  },
+};
 </script>
