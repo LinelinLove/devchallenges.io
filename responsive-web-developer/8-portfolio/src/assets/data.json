@@ -87,6 +87,118 @@
                 "name": "Photoshop",
                 "level": 8
             }
+        ],
+        "projects": [
+            {
+                "name": "404 not found",
+                "image": "404_PageNotFound.webp",
+                "alt": "404_PageNotFound",
+                "description": "In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.",
+                "demo": "https://linelinlove.github.io/devchallenges.io/responsive-web-developer/1-404-not-found/404-not-found.html",
+                "code": "https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/1-404-not-found",
+                "tag": [
+                    "HTML",
+                    "TailwindCSS",
+                    "responsive"
+                ]
+            },
+            {
+                "name": "My team page",
+                "image": "myTeam.webp",
+                "alt": "myTeam",
+                "description": "In this project, I work with HTML and CSS to create a responsive page. The design is from devchallenge.io.",
+                "demo": "https://linelinlove.github.io/devchallenges.io/responsive-web-developer/2-my-team-page/my-team-page.html",
+                "code": "https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/2-my-team-page",
+                "tag": [
+                    "HTML",
+                    "TailwindCSS",
+                    "CSS",
+                    "responsive"
+                ]
+            },
+            {
+                "name": "Interior consultant",
+                "image": "interiorConsultant.webp",
+                "alt": "interiorConsultant",
+                "description": "In this project, I work with HTML and CSS to create a responsive page. The design is from devchallenge.io.",
+                "demo": "https://linelinlove.github.io/devchallenges.io/responsive-web-developer/3-interior-consultant/interior-consultant.html",
+                "code": "https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/3-interior-consultant",
+                "tag": [
+                    "HTML",
+                    "TailwindCSS",
+                    "CSS",
+                    "JS",
+                    "responsive"
+                ]
+            },
+            {
+                "name": "Recipe page",
+                "image": "recipeBlog.webp",
+                "alt": "recipeBlog",
+                "description": "In this project, I work with HTML and CSS to create a responsive page. The design is from devchallenge.io.",
+                "demo": "https://linelinlove.github.io/devchallenges.io/responsive-web-developer/4-recipe-page/recipe-page.html",
+                "code": "https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/4-recipe-page",
+                "tag": [
+                    "HTML",
+                    "TailwindCSS",
+                    "responsive"
+                ]
+            },
+            {
+                "name": "My Gallery",
+                "image": "myGallery.webp",
+                "alt": "myGallery",
+                "description": "In this project, I work with HTML and CSS to create a responsive page. The design is from devchallenge.io.",
+                "demo": "https://linelinlove.github.io/devchallenges.io/responsive-web-developer/5-my-gallery/my-gallery.html",
+                "code": "https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/5-my-gallery",
+                "tag": [
+                    "HTML",
+                    "TailwindCSS",
+                    "responsive"
+                ]
+            },
+            {
+                "name": "Checkout Page",
+                "image": "checkout.webp",
+                "alt": "checkout",
+                "description": "In this project, I work with HTML and CSS to create a responsive page. The design is from devchallenge.io.",
+                "demo": "https://linelinlove.github.io/devchallenges.io/responsive-web-developer/6-checkout-page/checkout-page.html",
+                "code": "https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/6-checkout-page",
+                "tag": [
+                    "HTML",
+                    "TailwindCSS",
+                    "JS",
+                    "responsive"
+                ]
+            },
+            {
+                "name": "Edie homepage",
+                "image": "edieHomage.webp",
+                "alt": "edieHomage",
+                "description": "In this project, I work with HTML and CSS to create a responsive page. The design is from devchallenge.io.",
+                "demo": "https://linelinlove.github.io/devchallenges.io/responsive-web-developer/7-edie-homepage/edie-homepage.html",
+                "code": "https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/7-edie-homepage",
+                "tag": [
+                    "HTML",
+                    "TailwindCSS",
+                    "JS",
+                    "responsive"
+                ]
+            },
+            {
+                "name": "Portfolio",
+                "image": "portfolio.webp",
+                "alt": "portfolio",
+                "description": "In this project, I work with HTML and CSS to create a responsive page. The design is from devchallenge.io.",
+                "demo": "",
+                "code": "https://github.com/LinelinLove/devchallenges.io/tree/main/responsive-web-developer/8-portfolio",
+                "tag": [
+                    "HTML",
+                    "TailwindCSS",
+                    "JS",
+                    "responsive"
+                ]
+            }
         ]
     }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="font-montserrat font-medium">
     <div
-      class="w-[413px] border border-grey rounded-xl flex flex-col justify-start gap-y-6 m-4 p-6 bg-white"
+      class="w-[415px] border border-grey rounded-xl flex flex-col justify-start gap-y-6 m-4 p-6 bg-white"
       v-for="data in datas"
       :key="data"
     >
@@ -19,18 +19,18 @@
       </h1>
 
       <div
-        v-for="hobby in data[name]"
-        :key="hobby"
+        v-for="barlevel in data[name]"
+        :key="barlevel"
         class="flex flex-col items-start gap-y-9 transform transition duration-200 hover:scale-105 cursor-pointer"
       >
         <div class="flex flex-row justify-between w-full">
           <h1 class="text-h5 leading-5 text-grey-primary font-semibold">
-            {{ hobby.name }}
+            {{ barlevel.name }}
           </h1>
           <div class="w-60 h-2.5 bg-bar rounded-xl">
             <div
               class="h-2.5 bg-p-blue-primary rounded-xl barlevel"
-              :style="{'--width':  hobby.level + '0%'}"
+              :style="{ '--width': barlevel.level * 10 + '%' }"
             ></div>
           </div>
         </div>
@@ -49,26 +49,7 @@ export default {
   },
   props: [
     "name",
-    // {
-    //   height: {
-    //     type: Number,
-    //     default: 100,
-    //   },
-    // },
   ],
-  computed: {
-    cssVars() {
-      return {
-        // "--width": this.height + "%",
-        "--width": 100 + "%",
-      };
-    },
-  },
-  methods: {
-    // greet: function (level) {
-    //   alert("Hello " + level + "!");
-    // },
-  },
   name: "BarLevel",
 };
 </script>
@@ -76,7 +57,7 @@ export default {
 
 <style scoped>
 .barlevel {
-    width: var(--width);
+  width: var(--width);
 }
 </style>
       
