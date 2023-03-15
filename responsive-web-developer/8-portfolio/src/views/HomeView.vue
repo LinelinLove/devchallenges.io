@@ -1,6 +1,6 @@
 <template>
   <!-- main div -->
-  <div class="flex flex-row">
+  <div class="flex flex-row mr-auto ml-auto w-fit">
     <!-- 1st colomn -->
     <div>
       <Profile />
