@@ -5,20 +5,20 @@
       v-for="data in datas"
       :key="data"
     >
-      <h1
+      <h2
         class="text-h4 leading-5 text-grey-primary font-bold uppercase"
         v-if="name == 'frontend'"
       >
         Front end
-      </h1>
-      <h1
+      </h2>
+      <h2
         class="text-h4 leading-5 text-grey-primary font-bold uppercase"
         v-else-if="name == 'backend'"
       >
         Back-end
-      </h1>
+      </h2>
 
-      <div class="flex flex-col gap-y-2.5">
+      <!-- <div class="flex flex-col gap-y-2.5">
         <span
           v-for="barlevel in data[name]"
           :key="barlevel"
@@ -26,28 +26,31 @@
         >
           {{ barlevel.name }}
         </span>
-      </div>
+      </div> -->
 
-      <!-- <div
+      <div
         v-for="barlevel in data[name]"
         :key="barlevel"
         class="flex flex-col items-start gap-y-9 cursor-pointer"
       >
-        <div class="flex flex-row transform transition duration-200 hover:scale-110">
-          <h1 class="text-h5 leading-5 text-grey-primary font-semibold">
+        <div
+          class="flex flex-row transform transition duration-200 hover:scale-110 justify-between w-full"
+        >
+          <h3
+            class="text-h5 leading-5 text-grey-primary font-semibold"
+          >
             {{ barlevel.name }}
-          </h1> -->
+          </h3>
 
-          <!-- <div class="w-60 h-2.5 bg-bar rounded-xl">
+          <div class="w-60 h-2.5 bg-bar rounded-xl">
             <div
               class="h-2.5 bg-p-blue-primary rounded-xl barlevel"
               :style="{ '--width': barlevel.level * 10 + '%' }"
-            >
+            ></div>
           </div>
-          </div> -->
 
-        <!-- </div>
-      </div> -->
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -60,9 +63,7 @@ export default {
       datas: json,
     };
   },
-  props: [
-    "name",
-  ],
+  props: ["name"],
   name: "BarLevel",
 };
 </script>
