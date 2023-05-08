@@ -46,19 +46,19 @@
                 "name": "Gaming",
                 "image": "gaming.png",
                 "alt": "gaming",
-                "description": "Quisque feugiat malesuada molestie."
+                "description": "I grew up with video games, so of course it's one of my hobbies."
             },
             {
                 "name": "Cooking",
                 "image": "cooking.png",
                 "alt": "cooking",
-                "description": "Quisque feugiat malesuada molestie."
+                "description": "I love to cook, I always want to search a new recipe to cook and taste !"
             },
             {
                 "name": "Drawing",
                 "image": "drawing.png",
                 "alt": "drawing",
-                "description": "Quisque feugiat malesuada molestie."
+                "description": "I like to drawing when I have freetime and when I am very inspired."
             }
         ],
         "frontend": [

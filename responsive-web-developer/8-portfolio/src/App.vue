@@ -9,15 +9,13 @@
 }
 
 body {
+  background-color: lightblue ;
   /* background-color: #F2F2F2 ; */
-  background-color: pink;
-  padding: 0px 16px;
+  padding: 16px;
 }
 
 @media (min-width: 1024px) {
   body {
-    /* background-color: #F2F2F2 ; */
-    background-color: pink;
     padding: 90px 0px 0px 0px;
   }
 }

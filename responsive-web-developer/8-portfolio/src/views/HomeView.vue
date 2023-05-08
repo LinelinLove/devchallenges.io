@@ -1,15 +1,23 @@
 <template>
-  <div :class="{ dark: $store.state.darkMode }">
-    <button
-      class="bg-white dark:bg-black text-gray-700 dark:text-gray-300 px-3 py-1 rounded-md m-4"
+  <!-- main div -->
+  <div class="flex flex-col 
+  lg:w-fit lg:mx-auto"
+  :class="{ dark: $store.state.darkMode }">
+
+    <div>
+
+      <button
+      class="bg-white dark:bg-black text-grey-primary dark:text-grey-light px-3 px-3 py-2 rounded-md shadow-[0_0_30px_2px_rgba(0,0,0,0.1)]
+      lg:ml-4"
       @click="$store.commit('toggleDarkMode')"
-    >
+      >
       <span class="material-icons-outlined">
         {{ $store.state.darkMode ? "light_mode" : "dark_mode" }}
       </span>
     </button>
-    <!-- main div -->
-    <div class="flex flex-col mr-auto ml-auto w-fit lg:flex-row">
+  </div>
+
+    <div class="flex flex-col mx-auto w-fit lg:flex-row">
       <!-- 1st colomn -->
       <div class="flex flex-col gap-y-4 lg:gap-y-0">
         <Profile />
@@ -30,6 +38,7 @@
 
         <Project />
       </div>
+
     </div>
     <footer>
       <p
@@ -76,17 +85,7 @@ export default {
   methods: {
 ...mapMutations(['toggleDarkMode']),
   },
-  // methods: {
-  //   toggleDarkMode() {
-  //     this.darkMode = !this.darkMode;
-  //     this.$store.commit("toggleDarkMode");
-  //     localStorage.setItem("darkMode", this.darkMode);
-  //     this.updateBodyClass();
-  //   },
-  //   updateBodyClass() {
-  //     document.body.classList.toggle("dark", this.darkMode);
-  //   },
-  // },
+
 };
 </script>
 
@@ -96,8 +95,8 @@ export default {
   color: #fff;
 }
 
-.dark .tag-active {
+/* .dark .tag-active {
   background-color: #228bc4;
   color: white;
-}
+} */
 </style>

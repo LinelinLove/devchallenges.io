@@ -5,8 +5,9 @@
         class="shadow-[0_0_30px_2px_rgba(0,0,0,0.1)] rounded-xl flex flex-col justify-start gap-y-6 p-6 bg-white mb-8
         dark:bg-black"
       >
-        <h1 class="text-h4 leading-5 text-grey-primary font-bold">
-          Projects ({{ data.projects.length }})
+        <h1 class="text-h4 leading-5 text-grey-primary font-bold
+        dark:text-white">
+          PROJECTS ({{ data.projects.length }})
         </h1>
 
         <div
@@ -50,7 +51,8 @@
                 <span
                   v-for="tag in project.tag"
                   :key="tag"
-                  class="transform transition duration-200 hover:scale-105 hover:font-semibold cursor-pointer"
+                  class="transform transition duration-200 hover:scale-105 hover:font-semibold cursor-pointer
+                  dark:text-grey-light"
                   @click="toggleTag(tag)"
                   :class="{ active: selectedTag === tag }"
                 >
@@ -58,11 +60,12 @@
                 </span>
               </div>
               <h1
-                class="text-h2 leading-8 text-grey-primary font-semibold mb-5"
+                class="text-h2 leading-8 text-grey-primary font-semibold mb-5
+                dark:text-white"
               >
                 {{ project.name }}
               </h1>
-              <p>
+              <p class="dark:text-grey-light">
                 {{ project.description }}
               </p>
             </div>
