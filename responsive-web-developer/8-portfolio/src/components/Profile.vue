@@ -1,7 +1,9 @@
 <template>
   <div class="font-montserrat font-medium">
     <div
-      class="h-[692px] w-[413px] shadow-[0_0_30px_2px_rgba(0,0,0,0.1)] rounded-xl flex flex-col justify-start gap-y-8 m-4 p-6 bg-white"
+      class="h-[692px] w-fit mt-4 shadow-[0_0_30px_2px_rgba(0,0,0,0.1)] rounded-xl flex flex-col justify-start gap-y-8 p-6 bg-white 
+      dark:bg-black
+      lg:w-[413px] lg:m-4"
       v-for="data in datas"
       :key="data"
     >

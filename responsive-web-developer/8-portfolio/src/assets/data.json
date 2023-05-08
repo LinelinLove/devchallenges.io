@@ -5,7 +5,7 @@
             "job": "Front-end developer",
             "image": "profile.jpg",
             "alt": "Avatar",
-            "mail": "chrisline.lin@outlook.fr",
+            "mail": "chrisline@exemple.com",
             "tel": "(+33) 000 000 000",
             "description": "Self-motivated developer, who is willing to learn and create outstanding UI applications."
         },
@@ -13,21 +13,30 @@
             {
                 "date": "Feb 2017 - Current",
                 "job": "Front-end developer",
-                "image": "adidas.png",
+                "image": {
+                    "dark": "adidas-dark.png",
+                    "light": "adidas-light.png"
+                },
                 "alt": "adidas",
                 "description": "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
             },
             {
                 "date": "Aug 2016 - Feb 2018",
                 "job": "Full-stack developer",
-                "image": "hm.png",
+                "image": {
+                    "dark": "hm.png",
+                    "light": "hm.png"
+                },
                 "alt": "h&m",
                 "description": "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
             },
             {
                 "date": "Jun 2015 - Aug 2016",
                 "job": "Junior front-end developer",
-                "image": "nivea.png",
+                "image": {
+                    "dark": "nivea.png",
+                    "light": "nivea.png"
+                },
                 "alt": "nivea",
                 "description": "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
             }
@@ -100,7 +109,7 @@
                 "level": 9
             },
             {
-                "name": "Laravel (soon)",
+                "name": "Laravel",
                 "level": 9
             }
         ],
