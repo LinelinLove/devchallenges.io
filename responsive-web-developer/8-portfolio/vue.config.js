@@ -5,6 +5,11 @@ module.exports = defineConfig({
 
 // module.exports = {
 //   publicPath: process.env.NODE_ENV === 'production'
-//     ? 'devchallenges.io/responsive-web-developer/8-portfolio/dist/'
-//     : '/'
-// }
+//     ? 'devchallenges.io/responsive-web-developer/8-portfolio/docs/'
+//     : '/',
+// };
+
+
+module.exports = {
+  publicPath: '/responsive-web-developer/8-portfolio/docs/'
+};
